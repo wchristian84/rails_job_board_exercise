@@ -1,0 +1,9 @@
+<h1>Job Postings</h1>
+
+<ol>
+    <% @job_postings.each do |posting| %>
+    <li>
+        Company: <%= posting[:company] %>, Position: <%= posting[:position] %>, Location: <%= posting[:location] %>
+    </li>
+    <% end %>
+</ol>
